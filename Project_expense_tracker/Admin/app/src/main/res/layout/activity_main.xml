@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText android:id="@+id/etName" android:hint="Project Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etDescription" android:hint="Description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etStartDate" android:hint="Start Date (YYYY-MM-DD)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etEndDate" android:hint="End Date (YYYY-MM-DD)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etManager" android:hint="Manager Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etStatus" android:hint="Status (Active/Completed/On Hold)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etBudget" android:hint="Budget" android:inputType="numberDecimal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnSave" android:text="Save Project" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
